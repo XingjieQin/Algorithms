@@ -1,7 +1,13 @@
+/*
+ *原址稳定插入排序算法
+ *输入一个以ctrl+x结束的证型数组
+ *输出输入数组和已排序数组
+ *2018/07/25 10：01
+ * */
 #include <iostream>
 #include <vector>
 using namespace std;
-void insert_sort(vector<int> &a);//原址稳定的插入排序
+void insert_sort(vector<int> &a);
 void input(vector<int> &a);
 void output(vector<int> &a);
 int main(){
@@ -29,7 +35,7 @@ void insert_sort(vector<int> &a){
 	for(int j = 1; j < a.size(); ++j){
 		int i = j - 1;
 		int key = a[j];
-		while(i >= 0 && a[i] > key){
+		while(i >= 0 && a[i] > key){//算法稳定的原因
 			a[i + 1] = a[i];
 			--i;
 		}
