@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1532919856 source:/home/qinjie/Documents/algorithms/strassen/main.cpp
+	<iostream>
+	"matrix.h"
+
+1532928076 /home/qinjie/Documents/algorithms/strassen/matrix.h
+	<vector>
+	<iostream>
+	<cmath>
+
